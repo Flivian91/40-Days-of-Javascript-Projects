@@ -1,0 +1,56 @@
+/* Universal Reset for the Html document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* Rest the default 16px to 10px so thta we can be able to use rem */
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: rgb(171, 179, 171);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.counter-box h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+
+}
+.counter-box span {
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.counter-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.counter-btn button {
+  border-radius: .5rem;
+  border: none;
+  font-size: 2rem;
+  padding: 1rem 3.2rem;
+  cursor: pointer;
+}
+.counter-btn button:hover {
+  transform: scale(1.05);
+}
+
+/* h1 {
+  fo
+} */
