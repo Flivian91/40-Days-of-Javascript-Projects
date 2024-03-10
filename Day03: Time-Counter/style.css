@@ -1,0 +1,41 @@
+/* Universal Reset for the Html document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* Rest the default 16px to 10px so thta we can be able to use rem */
+  font-size: 62.5%;
+}
+body {
+  background-image: url(./snow.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  /* background-color: rgb(133, 176, 133);
+  height: 100vh; */
+  display: flex;
+  justify-content: center;
+
+}
+.time-box {
+  margin-top: 4rem;
+
+  display: flex;
+  gap: 2rem;
+}
+.time-box  span {
+  font-size: 5rem;
+  font-weight: 800;
+}
+.time-box p {
+  font-size: 1.4rem;
+}
+.time {
+  text-align: center;
+}
