@@ -1,0 +1,156 @@
+/* Universal Reset for the Html document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* Rest the default 16px to 10px so thta we can be able to use rem */
+  font-size: 62.5%;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.review-title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.review-title h1 {
+  font-size: 4rem;
+  text-transform:capitalize;
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+.review-title p {
+  background-color: rgb(255, 0, 255);
+  height: .3rem;
+  width: 9rem;
+}
+.review-card {
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 2px 3px black;
+  padding: 1rem 3rem;
+  border-radius: .6rem;
+}
+
+.review-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 255);
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 2rem;
+  
+}
+/* .review-image::after{
+  content: " \" ";
+  font-size: 4rem;
+  color: rgb(255, 0, 255);
+  position: absolute;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height:5rem;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 255);
+  top: -1rem;
+  left: 0;
+} */
+
+.review-image img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  /* transform: translate(-.5rem, .5rem); */
+}
+.review-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .6rem;
+}
+.review-names h2 {
+  font-size: 2.5rem;
+}
+.review-names p {
+  font-size: 2rem;
+  color: rgb(33, 149, 149);
+}
+.review-details {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+
+.review-details p {
+  font-size: 1.8rem;
+  color: #555;
+}
+.review-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.review-icon div {
+  display: flex;
+  gap: 1rem;
+
+}
+.review-icon ion-icon {
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 1rem;
+  transition: all .2s;
+  color: rgb(255, 0, 255);
+
+
+}
+.review-icon ion-icon:hover {
+  background-color: rgb(207, 204, 207);
+  border-radius: 50%;
+  transform: scale(1.05);
+}
+.review-icon ion-icon:active {
+  transform: scale(.9);
+}
+
+.review-icon button {
+  padding: 1rem 3.2rem;
+  background-color: rgb(255, 0, 255);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
