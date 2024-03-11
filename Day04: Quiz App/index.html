@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <!-- <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="question-box" id="quiz">
+        <div class="header">
+          <div class="header-details">
+            <h3>Question</h3>
+            <div>
+              <span id="initial-no">1</span>
+              <span>/</span>
+              <span id="last-no">2</span>
+            </div>
+          </div>
+          <div class="cat">
+            <h2>CAT 1</h2>
+          </div>
+          <div class="counter">
+            <ion-icon name="stopwatch-outline"></ion-icon>
+            <span id="minutes">45</span>
+            <span>:</span>
+            <span id="seconds">24</span>
+          </div>
+        </div>
+        <div class="heading">
+          <h1 id="question">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et alias
+            recusandae officiis unde ratione ?
+          </h1>
+        </div>
+        <div class="answers">
+          <div class="radio">
+            <label for="a">
+              <div>
+                <span>(a)</span>
+                <span id="ans-a">Answer</span>
+              </div>
+              <input class="answer" type="radio" id="a" name="answer" />
+            </label>
+            <!-- <input type="radio" id="a" name="answer"> -->
+            <label for="b">
+              <div>
+                <span>(b)</span>
+                <span id="ans-b">Answer</span>
+              </div>
+              <input class="answer" type="radio" id="b" name="answer" />
+            </label>
+            <label for="c">
+              <div>
+                <span>(c)</span>
+                <span id="ans-c">Answer</span>
+              </div>
+              <input class="answer" type="radio" id="c" name="answer" />
+            </label>
+            <label for="d">
+              <div>
+                <span>(d)</span>
+                <span id="ans-d">Answer</span>
+              </div>
+              <input class="answer" type="radio" id="d" name="answer" />
+            </label>
+          </div>
+        </div>
+        <div class="submit">
+          <button id="next">
+            Next
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
